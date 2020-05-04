@@ -1,0 +1,224 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1.2;
+  background-color: rgb(255, 255, 255);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50% 50% 50% 50%);
+  margin: -1px;
+}
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 28px 0 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(149, 225, 211);
+  font-weight: 700;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 490px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-menu-item {
+}
+
+.main-menu-link {
+  position: relative;
+  color: rgb(149, 225, 211);
+  transition: all 0.8s ease-out;
+}
+
+.main-menu-link:hover,
+.main-menu-link:focus {
+  display: block;
+  color: rgb(243, 129, 129);
+}
+
+.main-menu-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(243, 129, 129);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease-out;
+}
+
+.main-menu-link:hover::after,
+.main-menu-link:focus::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+font-family: "Kaushan Script", cursive;
+font-family: "Roboto", sans-serif;
+font-family: "Montserrat", sans-serif;
