@@ -161,7 +161,6 @@ body {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -190,12 +189,13 @@ body {
 .main-menu-link {
   position: relative;
   color: rgb(149, 225, 211);
-  transition: all 0.8s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .main-menu-link:hover,
 .main-menu-link:focus {
   color: rgb(243, 129, 129);
+  padding-bottom: 12px;
 }
 
 .main-menu-link::after {
@@ -209,7 +209,7 @@ body {
   background-color: rgb(243, 129, 129);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .main-menu-link:hover::after,
@@ -277,14 +277,75 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.card-tree-title {
+.team-card {
+}
+.card-tree-title,
+.card-paragraph {
   text-align: center;
 }
-.card-paragraph {
-}
+
 .overlay-container {
   position: relative;
+}
+
+.team-image {
+  box-shadow: 0px 0px royalblue;
+
+  transform: translate(0px, 0px);
+  transition: all 0.2s linear;
+}
+
+.overlay-container:focus,
+.overlay-container:hover .team-image {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px royalblue;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0px, 0px);
+  transition: all 0.2s linear;
+}
+
+.overlay-container:focus,
+.overlay-container:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-10px, -10px);
+}
+
+.overlay-link {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid red;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay-link-facebook {
+  background-image: url(../img/facebook.png);
+}
+
+.overlay-link-twitter {
+  background-image: url(../img/twitter.png);
+}
+
+.overlay-link-pinterest {
+  background-image: url(../img/pinterest.png);
+}
+
+.overlay-link-instagram {
+  background-image: url(../img/instagram.png);
 }
 font-family: "Kaushan Script", cursive;
 font-family: "Roboto", sans-serif;
