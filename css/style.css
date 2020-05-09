@@ -156,7 +156,7 @@ body {
 .navigation {
   justify-content: space-between;
   align-items: baseline;
-  padding: 28px 0 100px;
+  padding: 23px 0 60px;
 }
 
 .flex-container {
@@ -166,7 +166,7 @@ body {
 }
 
 .logo-link {
-  font-size: 30px;
+  font-size: 29px;
   font-family: "Montserrat", sans-serif;
   color: rgb(149, 225, 211);
   font-weight: 700;
@@ -233,10 +233,25 @@ body {
 
 .title-span {
   display: block;
+  margin-bottom: 14px;
   font-size: 24px;
   font-family: "Kaushan Script", cursive;
   color: rgb(51, 51, 51);
   text-align: center;
+  text-transform: initial;
+}
+
+.second-title:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 60px;
+  margin: 34px auto 64px;
+  background-color: rgb(243, 129, 129);
+}
+
+.services {
+  padding: 60px 0px 38px;
 }
 
 .servisces-list {
@@ -247,8 +262,12 @@ body {
 }
 
 .services-item {
-  width: 380px;
-  padding: 50px 0px 50px 80px;
+  width: 375px;
+  padding: 0px 0px 0px 80px;
+}
+
+.services-item:nth-last-of-type(n + 4) {
+  margin-bottom: 96px;
 }
 
 .tree-title {
@@ -257,6 +276,7 @@ body {
   color: rgb(51, 51, 51);
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .paragraph {
@@ -267,7 +287,16 @@ body {
   text-align: left;
 }
 
+.team {
+  padding: 50px 0px 78px;
+}
+
+.team-secopnd-title::after {
+  margin-bottom: 40px;
+}
+
 .team-paragraph {
+  margin: 0px auto 90px;
   width: 980px;
   text-align: center;
 }
@@ -284,21 +313,25 @@ body {
   text-align: center;
 }
 
+.card-tree-title {
+  margin-bottom: 7px;
+}
+
 .overlay-container {
   position: relative;
 }
 
 .team-image {
-  box-shadow: 0px 0px royalblue;
-
+  box-shadow: 0px 0px rgb(149, 225, 211);
   transform: translate(0px, 0px);
   transition: all 0.2s linear;
+  margin-bottom: 28px;
 }
 
 .overlay-container:focus,
 .overlay-container:hover .team-image {
   transform: translate(-10px, -10px);
-  box-shadow: 10px 10px royalblue;
+  box-shadow: 10px 10px rgb(149, 225, 211);
 }
 
 .overlay {
@@ -310,6 +343,7 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
+  background: linear-gradient(rgb(252, 227, 138), rgb(243, 129, 129));
   visibility: hidden;
   opacity: 0;
   transform: translate(0px, 0px);
@@ -319,17 +353,26 @@ body {
 .overlay-container:focus,
 .overlay-container:hover .overlay {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
   transform: translate(-10px, -10px);
 }
 
 .overlay-link {
   display: block;
-  height: 50px;
-  width: 50px;
-  border: 2px solid red;
+  height: 56px;
+  width: 56px;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgb(252, 227, 138);
+  transition: all 0.2s linear;
+}
+
+.overlay-link:hover {
+  background-color: rgb(149, 225, 211);
+}
+
+.overlay-item:nth-last-of-type(n + 2) {
+  border-right: 1px solid rgba(252, 227, 138, 0.5);
 }
 
 .overlay-link-facebook {
@@ -347,6 +390,21 @@ body {
 .overlay-link-instagram {
   background-image: url(../img/instagram.png);
 }
-font-family: "Kaushan Script", cursive;
-font-family: "Roboto", sans-serif;
-font-family: "Montserrat", sans-serif;
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding: 25px 0px 25px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-link {
+  color: #f38181;
+}
+
+.footer-form {
+  display: block;
+}
