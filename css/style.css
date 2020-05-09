@@ -264,10 +264,36 @@ body {
 .services-item {
   width: 375px;
   padding: 0px 0px 0px 80px;
+  background-repeat: no-repeat;
+  background-position: 20px 2px;
 }
 
 .services-item:nth-last-of-type(n + 4) {
   margin-bottom: 96px;
+}
+
+.services-item-photo {
+  background-image: url(../img/alarm.png);
+}
+
+.services-item-design {
+  background-image: url(../img/graph.png);
+}
+
+.services-item-creativity {
+  background-image: url(../img/computer.png);
+}
+
+.services-item-seo {
+  background-image: url(../img/book.png);
+}
+
+.services-item-css {
+  background-image: url(../img/home.png);
+}
+
+.services-item-digital {
+  background-image: url(../img/foto.png);
 }
 
 .tree-title {
@@ -392,12 +418,12 @@ body {
 }
 
 footer {
-  display: flex;
+  justify-items: center;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  padding: 25px 0px 25px;
+  padding: 10px 0px 11px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -405,6 +431,29 @@ footer {
   color: #f38181;
 }
 
-.footer-form {
+.footer-input {
+  height: 40px;
+  width: 230px;
+}
+
+.footer-input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 12px;
+  border: 1px solid #e7e7e7;
+  text-transform: initial;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-botton {
   display: block;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #95e1d3;
+  border: none;
 }
