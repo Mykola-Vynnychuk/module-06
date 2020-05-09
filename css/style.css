@@ -333,6 +333,7 @@ body {
   justify-content: space-between;
 }
 .team-card {
+  width: 380px;
 }
 .card-tree-title,
 .card-paragraph {
@@ -390,6 +391,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(252, 227, 138);
+  opacity: 1;
   transition: all 0.2s linear;
 }
 
@@ -418,6 +420,7 @@ body {
 }
 
 footer {
+  display: flex;
   justify-items: center;
   justify-content: space-between;
   font-size: 14px;
@@ -429,6 +432,10 @@ footer {
 
 .footer-link {
   color: #f38181;
+}
+
+.footer-form {
+  display: flex;
 }
 
 .footer-input {
